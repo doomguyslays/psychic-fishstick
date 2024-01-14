@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" android-versionCode="10049" id="org.dashnet.cookieclicker" version="1.0.0">
+	<feature name="AdMob">
+		<param name="android-package" value="admob.plus.cordova.AdMob" />
+	</feature>
+	<feature name="File">
+		<param name="android-package" value="org.apache.cordova.file.FileUtils" />
+		<param name="onload" value="true" />
+	</feature>
+	<allow-navigation href="cdvfile:*" />
+	<feature name="InAppBrowser">
+		<param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+	</feature>
+	<feature name="SafMediastore">
+		<param name="android-package" value="com.customautosys.saf_mediastore.SafMediastore" />
+	</feature>
+	<feature name="Diagnostic">
+		<param name="android-package" value="cordova.plugins.Diagnostic" />
+		<param name="onload" value="true" />
+	</feature>
+	<name>Cookie Clicker</name>
+	<description>" The official mobile version of Cookie Clicker, by DashNet. "</description>
+	<author href="https://dashnet.org">" DashNet "</author>
+	<preference name="cordova.plugins.diagnostic.modules" value="" />
+	<content src="index.html" />
+	<access origin="*" />
+	<icon density="mdpi" src="www/img/icon/mipmap-mdpi/cookieclicker.png" />
+	<icon density="hdpi" src="www/img/icon/mipmap-hdpi/cookieclicker.png" />
+	<icon density="xhdpi" src="www/img/icon/mipmap-xhdpi/cookieclicker.png" />
+	<icon density="xxhdpi" src="www/img/icon/mipmap-xxhdpi/cookieclicker.png" />
+	<icon density="xxxhdpi" src="www/img/icon/mipmap-xxxhdpi/cookieclicker.png" />
+	<hook src="hooks/after-prepare.js" type="after_prepare" />
+	<preference name="loglevel" value="DEBUG" />
+	<preference name="orientation" value="portrait" />
+	<preference name="AndroidPersistentFileLocation" value="Compatibility" />
+	<preference name="permissions" value="none" />
+	<preference name="android-targetSdkVersion" value="33" />
+	<preference name="android-compileSdkVersion" value="33" />
+	<preference name="AndroidXEnabled" value="true" />
+	<preference name="GradlePluginKotlinEnabled" value="true" />
+</widget>
